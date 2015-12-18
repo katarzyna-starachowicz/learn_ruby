@@ -1,0 +1,18 @@
+w pliku Gemfile powinno być tylko:
+source "https://rubygems.org"
+
+gem "rspec"
+gem "pry"
+
+
+TERMINAL:
+cd folder_z_zadaniem
+mkdir spec
+mv nazwa_spec.rb spec
+bundle exec rspec --init
+cat.rspec
+mkdir lib
+subl lib/nazwa.rb {i zapisać}
+bundle exec rspec
+
+{w nazwa_spec.rb zmienic sciezke require na ./lib/nazwa}
