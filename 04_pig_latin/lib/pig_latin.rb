@@ -13,10 +13,6 @@ def translate(text)
       end
     end
     word += "ay"
-    
-    # Wcześniej poniższe dwa segmenty (w sensie graficznym, oddzielone enterem) były w odwrotnej kolejności.
-    # Wówczas wyskakiwał mi błąd, że nie można uruchomić metody split na "zerowej" klasie (NilClass). 
-    # Ale właściwie nie doszłam, o co mu chodziło...
 
     a = 0
     b = 100
@@ -40,7 +36,7 @@ def translate(text)
       z = 1 if %w{A B C D E F G H I J K L M N O P R Q S T U W V X Y Z}.include? letter
     end
     if z == 1
-      word = letters.join("").capitalize!
+      word = letters.join("").capitalize
     else
       word = letters.join("")
     end
