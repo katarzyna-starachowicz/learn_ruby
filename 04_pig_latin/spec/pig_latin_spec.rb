@@ -76,7 +76,7 @@ describe "#translate" do
 
   it "translates capitalized words and retain the punctuation from the original phrase" do
     s = translate("Och, Ruby is so Cool!")
-    s.should == "Och, Ubyray isay osay Oolcay!"
+    s.should == "Ochay, Ubyray isay osay Oolcay!"
   end
 
 end
